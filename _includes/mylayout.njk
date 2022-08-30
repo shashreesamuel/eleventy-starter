@@ -1,3 +1,21 @@
 ---
-
+site_title: My First Eleventy Site
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ site_title }}</title>
+    </head>
+    <body>
+        <h1>{{ site_title }}</h1>
+        <hr/>
+        {{ content | safe }}
+        <h4/>
+        <small>
+            <a href="https://github.com/TheCoderGuru/">My Github</a>
+        </small>
+    </body>
+</html>
